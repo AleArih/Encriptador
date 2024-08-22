@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>Ingrese el texto aquí</h1>
+            <textarea id="texto" placeholder="Solo letras minúsculas y sin acentos"></textarea>
+            <div class="button-section">
+                <button onclick="encriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="ruta_de_la_imagen.jpg" alt="Imagen de referencia" id="imagen">
+            <p id="mensaje-inicial">
+                <span>Ningún mensaje fue encontrado</span><br>
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+            <p id="resultado"></p>
+            <button class="copiar" id="copiar" style="display:none;" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <footer>Created By Verónica Arias 2024</footer>
+</body>
+</html>
